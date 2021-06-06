@@ -1,0 +1,78 @@
+<!--Task 20 - Capstone Project IV: JavaScript fundamentals - Compulsory Task-->
+<!--Lee Kaplan-->
+<!--This website is about swimming-->
+
+<!DOCTYPE html>
+<html lang="en"> <!--I learned how to declare the language at https://www.w3.org/International/questions/qa-html-language-declarations-->
+
+    <head>
+
+        <title>Swimming</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+        <script type='text/javascript' src="script.js"></script>
+
+    </head>
+
+    <body>
+
+        <!--This code was taken from https://www.w3schools.com/howto/howto_js_topnav.asp and modified-->
+        
+        <div class="topnav">
+
+            <a href="index.html">Home</a>
+            <a href="myClub.html">My Club</a>
+            <a class="active" href="newsletter.html">Newsletter</a>
+            <a href="saved.html">Saved</a>
+            
+        </div>
+
+        <h1 class="pageHeading">Sign-up for our newsletter!</h1>
+
+        <!--A form which would be used to sign the user up for a newsletter. NB: There is no functionality-->
+        <div id="entireForm">
+
+            <!--I use this div as a spacer. I used inline CSS because it was very simple css-->
+            <div style="width: 20%; float: left;"></div>
+            <form style="width: 80%;">
+
+                <label>First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                
+                <label>Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+                <label>Email Address</label>
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address">
+                
+                <label>Select how often you'll recieve emails</label>
+                <div id="spacer"></div>
+
+                <label class="container">Weekly
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Monthy
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Sub-Annually
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Annually
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+
+                <input type="submit" value="Sign-up!">
+
+
+            </form>
+
+        </div>
+
+    </body>
+</html>

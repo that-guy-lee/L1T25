@@ -1,0 +1,118 @@
+<!--Task 20 - Capstone Project IV: JavaScript fundamentals - Compulsory Task-->
+<!--Lee Kaplan-->
+<!--This website is about swimming-->
+
+<!DOCTYPE html>
+<html lang="en"> <!--I learned how to declare the language at https://www.w3.org/International/questions/qa-html-language-declarations-->
+
+  <head>
+
+    <title>Swimming</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script type='text/javascript' src="script.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--This code was taken from https://www.w3schools.com/howto/howto_js_topnav.asp and modified-->
+        
+    <div class="topnav">
+
+      <a href="index.html">Home</a>
+      <a class="active" href="myClub.html">My Club</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="saved.html">Saved</a>
+            
+    </div>
+
+    <div class="entireContent">
+      <div class="topLevelHeading">
+        <h1 class="pageHeading">Who do I swim for?</h1>
+        <h2 class="pageSubHeading">Aqua Warriors</h2>
+      </div>
+
+      <!--A description of the club that I swim for-->
+      <div id="myClubMain">I swim for a club called <a href="https://www.facebook.com/aquawarriorssa/">Aqua Warriors</a> in the south of Johannesburg.
+          <br>
+          Aqua Warriors is a year round swimming school with lessons ranging from learn to swim to advanced swimming classes for all ages.
+          <br>
+          I've been swimming with them for years, and they truly have been amazing.
+          <br>
+          They strive to provide the best training and development possible
+
+          <img class="saveIcon" onclick="saveText(this)" src="img/save.png">
+          <img class="likeIcon" onclick="like(this)" src="img/like.png">
+        </p>
+      </div>
+
+      <!--A Table which describes the training times of the club-->
+      <div id=trainingTimes>
+
+        <h2 class="pageSubHeading">Training Times</h2>
+        <table>
+          <tr>
+            <th>Day of the week</th>
+            <th>Time</th>
+            <th>What's happening</th>
+          </tr>
+          <tr>
+            <th rowspan="4">Monday - Thursday</th>
+            <td>12:00 - 13:00</td>
+            <td>Learn to swim</td>
+          </tr>
+          <tr>
+            <td>13:00 - 14:00</td>
+            <td>Learn to swim</td>
+          </tr>
+          <tr>
+            <td>15:00 - 16:00</td>
+            <td>Stoke Development</td>
+          </tr>
+          <tr>
+            <td>16:00 - 18:00</td>
+            <td>Squad Training</td>
+          </tr>
+                    
+          <tr>
+            <th rowspan="2">Friday</th>
+            <td>12:00 - 13:00</td>
+            <td>Learn to swim</td>
+          </tr>
+          <tr>
+            <td>16:00 - 18:00</td>
+            <td>Squad Training</td>
+          </tr>
+                    
+          <tr>
+            <th rowspan="2">Saturday</th>
+            <td>10:00 - 12:00</td>
+            <td>Stroke Development</td>
+          </tr>
+          <tr>
+            <td>13:00 - 15:00</td>
+            <td>Squad Training</td>
+          </tr>
+        </table>
+        <img class="likeIcon" onclick="like(this)" src="img/like.png">
+      </div>
+
+      <!--A quote from the clubs facebook page-->
+      <blockquote cite="https://www.facebook.com/aquawarriorssa/">
+
+        <p id="quote">
+          "Aqua Warriors is a year round swimming school with lessons ranging from learn to swim to 
+          advanced swimming classes for all ages. Make an appointment today to change your life, or save a life."
+          <img class="saveIcon" onclick="saveText(this)" src="img/save.png">
+          <img class="likeIcon" onclick="like(this)" src="img/like.png">
+        </p>
+
+      </blockquote>
+
+    </div>
+
+  </body>
+</html>
