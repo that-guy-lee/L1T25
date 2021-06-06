@@ -4,9 +4,9 @@ Basically, this is just a website that tells the end user about swimming.
 It also tells user what times the "Aqua Warriors" club swims at
 
 # Table of content
-- [Installation](## Installation)
-- [Usage](## Usage)
-- [Credits](## Credits)
+- [Installation](##Installation)
+- [Usage](##Usage)
+- [Credits](##Credits)
 
 ## Installation
 
